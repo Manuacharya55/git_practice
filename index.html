@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Dhoni</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        background-color: black;
+
+        overflow: hidden;
+      }
+
+      .text,.image,.details{
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(65, 64, 64);
+      }
+      
+      .text{
+        width: 30%;
+        text-align: center;
+      }
+
+      .text h1 {
+        font-size: 10rem;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+      }
+
+      .image {
+        width: 40%;
+      }
+
+      .image img{
+        height: 100%;
+      }
+
+      .details{
+        font-size: 20px;
+        font-family: "Poppins";
+        color: rgb(97, 95, 95);
+      }
+
+      @media(max-width:600px){
+        body,html{
+          flex-direction: column;
+          overflow: hidden;
+          overflow-y: auto;
+        }
+        .text,.image,.details{
+          width: 100%;
+          height: fit-content;
+        }
+
+        .text h1{
+          transform: rotate(0deg);
+          font-size: 7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1>m s dhoni</h1>
+    </div>
+    <div class="image">
+        <img src="https://documents.iplt20.com/ipl/IPLHeadshot2024/57.png" alt="">
+    </div>
+    <div class="details">
+        <p>MS Dhoni is a cricketing colossus who revolutionized Indian cricket. Hailing from Ranchi, his journey from a railway employee's son to a global icon is nothing short of inspiring. Renowned for his ice-cool demeanor, Dhoni's captaincy acumen led India to unprecedented triumphs, including the 2007 T20 World Cup, the 2011 ODI World Cup, and the 2013 Champions Trophy. Beyond his leadership, he was a formidable batsman, known for his helicopter shot and match-winning abilities. A wicket-keeper par excellence, Dhoni's lightning-fast reflexes behind the stumps were unmatched. His charisma and humility have earned him a dedicated fan following worldwide, solidifying his status as one of India's most beloved sportspersons.</p>
+    </div>
+  </body>
+</html>
